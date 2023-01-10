@@ -1,0 +1,24 @@
+version: '3'
+
+services:
+  db:
+    image: mongo:5
+    restart: always
+    ports:
+      - 27017:27017
+    environment:
+      MONGODB_DATABASE: schoolservice
+    volumes: 
+      - ./mongo:/data/db
+
+  postgres:
+    image: postgres
+    restart: always
+    ports:
+      - 8000:5432
+    environment:
+      POSTGRES_PASSWORD: pass
+      POSTGRES_DB: mydbpos
+    container_name: mydbpos
+    volumes:
+      - ./postgres:/var/lib/postgresql/data
