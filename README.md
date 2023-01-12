@@ -24,13 +24,26 @@
 
 ## Description
 
-[Nest](https://github.com/nestjs/nest) framework TypeScript starter repository.
+Esta Aplicacion es creada en base a la arquitectura de micro servicios montandose en un orquestador que seria nuestra api-gateway con la cual podremos controlar las rutas 
+y de tal manera manejar el encolamiento de mensajes via RabbitMQ.
 
+## Creacion para url RabbitMQ 
+En la siguiente ruta encontraran el servicio gratuito para la creacion de un Queue gratuito de Rabbit
+https://www.cloudamqp.com
+Posteriormente generar una instancia 
 ## Installation
 
 ```bash
 $ npm install
 ```
+
+## Installation DB
+Ejecutar el archivo docker-composse con el siguiente comando para ejecutar los contenedores de las bd En este ejemplo practico
+se utiliza postgres para generar usuario y su auth.
+```bash
+docker-compose up -d
+```
+
 
 ## Running the app
 
@@ -64,9 +77,9 @@ Nest is an MIT-licensed open source project. It can grow thanks to the sponsors 
 
 ## Stay in touch
 
-- Author - [Kamil Myśliwiec](https://kamilmysliwiec.com)
-- Website - [https://nestjs.com](https://nestjs.com/)
-- Twitter - [@nestframework](https://twitter.com/nestframework)
+- Author - Nicolas Castillo
+- Website - NULL
+- Twitter - NULL
 
 ## License
 
