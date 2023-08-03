@@ -2,7 +2,6 @@
 import { Controller, Get, Post, Body, Put, Param, Delete } from '@nestjs/common';
 import {Observable} from 'rxjs';
 import { userDTO } from './dto/user.dto';
-import { UpdateUserDto } from './dto/update-user.dto';
 import { ClientProxyUsers } from 'src/common/proxy/clientProxy';
 import { IUser } from 'src/common/interfaces/user.interface';
 import { UserMSG } from 'src/common/constants';

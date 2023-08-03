@@ -21,4 +21,16 @@ export class ClientProxyUsers {
         })
     }
 
+    clientProxyEstate(): ClientProxy {
+        return ClientProxyFactory.create({
+            transport: Transport.RMQ,
+            options: {
+                urls: [`${this.config.get('AMQP_URL')}`],
+                queue: RabbitMQ.EstateQueue,
+                queueOptions: {
+                    durable: true, //persistent
+                },
+            }
+        })
+    }
 }
